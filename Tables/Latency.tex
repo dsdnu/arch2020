@@ -1,0 +1,21 @@
+\begin{table}[!t]
+	\centering
+	\caption {Wall clock time required for simulating 100 discrete time steps in software and proposed implementation} 
+	\begin{tabular}{l|l|l|l|l}
+		\toprule
+		\multirow{ 2}{*}{\bf Topology}        & \multirow{ 2}{*}{\bf Run time(ms)}           & \multicolumn{3}{c}{\bf Network Size} \\
+		\cline{3-5}
+		&                              & {\bf 100} & {\bf 256} & {\bf 1024}     \\
+		\midrule
+		\multirow{ 2}{*}{WS}  & Software   & 107       & 312    & 1297 \\
+		                      & NoC        & 0.213     & 0.232  & 2.81 \\
+		\midrule
+		\multirow{ 2}{*}{BA}  & Software   & 97        & 242    &  1130 \\
+		                      & NoC        & 0.215     & 0.248  &  2.78 \\
+		\midrule
+		\multirow{ 2}{*}{ER}  & Software   & 117       & 473    & 4408\\
+		                      & NoC        & 0.217     & 0.262  & 3.67\\
+		\bottomrule
+	\end{tabular}
+\label{tab:latency}
+\end{table}

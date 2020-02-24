@@ -1,0 +1,68 @@
+% This is samplepaper.tex, a sample chapter demonstrating the
+% LLNCS macro package for Springer Computer Science proceedings;
+% Version 2.20 of 2017/10/04
+%
+\documentclass[runningheads]{llncs}
+%
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{subfigure}
+\usepackage{algpseudocode}
+\makeatletter
+\renewcommand{\ALG@beginalgorithmic}{\small}
+\makeatother
+\usepackage{algorithm}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{booktabs, colortbl, tabularx}
+\usepackage{flushend}
+\usepackage{todonotes}
+% Used for displaying a sample figure. If possible, figure files should
+% be included in EPS format.
+%
+% If you use the hyperref package, please uncomment the following line
+% to display URLs in blue roman font according to Springer's eBook style:
+% \renewcommand\UrlFont{\color{blue}\rmfamily}
+
+\begin{document}
+%
+\title{StocNoC:Accelerating Stochastic Models through Reconfigurable Network on Chip Architectures}
+%
+%\titlerunning{Abbreviated paper title}
+% If the paper title is too long for the running head, you can set
+% an abbreviated paper title here
+%
+\author{Arshyn Zhanbolatov \and
+Kizheppatt Vipin\orcidID{0000-0002-1013-7727} \and
+Aresh Dadlani\orcidID{0000-0001-6841-9682} \and
+Dmitriy Fedorov}
+%
+\authorrunning{A. Zhanbolatov et al.}
+% First names are abbreviated in the running head.
+% If there are more than two authors, 'et al.' is used.
+%
+\institute{Department of Electrical and Computer Engineering, Nazarbayev University, Nur-Sultan, Kazakhstan 010000\\
+\email{arshyn.zhanbolatov@nu.edu.kz}}
+%
+\maketitle              % typeset the header of the contribution
+%
+\input{Sections/0_abstract}
+\input{Sections/1_intro}
+\input{Sections/2_background}
+\input{Sections/3_architecture}
+\input{Sections/4_results}
+\input{Sections/5_conclusion}
+
+%
+% ---- Bibliography ----
+%
+% BibTeX users should specify bibliography style 'splncs04'.
+% References will then be sorted and formatted in the correct style.
+%
+\bibliographystyle{splncs04}
+\bibliography{arc}
+%
+\end{document}
